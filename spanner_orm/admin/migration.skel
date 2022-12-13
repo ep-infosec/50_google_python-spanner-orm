@@ -1,0 +1,20 @@
+"""Spanner ORM migration: $migration_name.
+
+Migration ID: $migration_id
+Created: $current_date
+"""
+
+import spanner_orm
+
+migration_id = $migration_id
+prev_migration_id = $prev_migration_id
+
+
+def upgrade() -> spanner_orm.MigrationUpdate:
+  """See spanner_orm migrations interface."""
+  return spanner_orm.NoUpdate()
+
+
+def downgrade() -> spanner_orm.MigrationUpdate:
+  """See spanner_orm migrations interface."""
+  return spanner_orm.NoUpdate()
